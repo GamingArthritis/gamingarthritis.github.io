@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HT Green Energy Consultants</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        html {
+            background-image: url('images/bg800bulbs.jpg');
+            background-size: 100%; /* Zoom out the background image */
+            background-position: left;
+            background-repeat: no-repeat;
+        }
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center; /* Center the container horizontally */
+            align-items: center; /* Center the container vertically */
+            min-height: 100vh; /* Make sure the body takes the full height of the viewport */
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0; /* Set container margin to zero */
+            padding: 0; /* Set container padding to zero */
+            width: 100%;
+            max-width: 800px; /* Maximum width for the container */
+        }
+        h1 {
+            font-size: 24px; /* Adjust the font size as needed */
+        }
+        p {
+            font-size: 16px; /* Adjust the font size as needed */
+        }
+        .content-box {
+            background-color: rgba(255, 255, 255, 0.9); 
+            width: 100%;
+            padding: 10px; /* Add padding for content inside the box */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            outline: 1px solid rgb(73, 72, 72);
+            border-radius: 10px 10px 0 0; /* Add rounded corners */
+        }
+        .content-box-rounded2 {
+            background-color: rgba(255, 255, 255, 0.9); 
+            width: 100%;
+            padding: 10px; /* Add padding for content inside the box */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            outline: 1px solid rgb(73, 72, 72);
+            border-radius: 0 0 10px 10px; /* Add rounded corners */
+        }
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .nav-container nav ol {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            margin: 0; /* Set margin to zero */
+        }
+        .nav-container nav ol li {
+            margin-right: 20px;
+        }
+        .logo32 {
+            display: flex;
+            align-items: left;
+            padding: 10px; /* Add padding */
+        }
+        .logo32 img {
+            width: 50px; /* Set the width of the logo */
+            height: 50px; /* Set the height of the logo */
+            object-fit: cover; /* Ensure the image fits within the specified dimensions */
+        }
+        .img-centered {
+    display: block;
+    margin-right: 0px; /* Add some spacing between the image and other content */
+    margin-left: -10px;
+    margin-right: -10px;
+    float: inline-end;
+}
+        .content-wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+        .content-with-image {
+            display: flex;
+            align-items: center;
+        }
+        .image-box {
+            width: 250px; /* Adjust the width of the image box */
+            height: 250px; /* Adjust the height of the image box */
+            border-radius: 10px; /* Add rounded corners */
+            overflow: hidden; /* Ensure the image stays within the box */
+            margin-left: 20px; /* Add margin to separate the image from text */
+        }
+        .content-with-float {
+    display: flex;
+    margin-bottom: 20px; /* Add some spacing below the content box */
+}
+
+.text-content {
+    flex: 1; /* Allow the text content to take up the remaining space */
+    margin-right: 20px; /* Add margin to separate the image from text */
+}
+
+.image-box {
+    width: 250px; /* Adjust the width of the image box */
+    height: 250px; /* Adjust the height of the image box */
+    border-radius: 10px; /* Add rounded corners */
+    overflow: hidden; /* Ensure the image stays within the box */
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px; /* Add rounded corners */
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header content box -->
+        <div class="content-box content-box-rounded">
+            <div class="nav-container">
+                <div class="logo32">
+                    <a href="index.html">
+                        <img src="images/logo32.jpg" alt="logo32" class="logo top-left">
+                    </a>
+                </div>
+                <nav>
+                    <ol>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                    </ol>
+                </nav>
+            </div>
+            <img src="images/htgreen-hero.jpg" alt="htgreen-hero" class="centered img-centered" style="
+            width: 820px;">"
+            <h1>Towards a zero electricity bill</h1>
+            <hr>
+            <p>Sick of getting big power bills? You've replaced all the old bulbs with LEDs, got a new fridge and super-efficient heat pump and you're still paying around $1200 a year? Your next step is to let HT Green work with you to design and install a system that uses solar, wind or geothermal that's guaranteed to wipe that power bill for now and into the future.</p>
+        </div>
+        <!-- Solar PV solutions content box -->
+        <div class="content-box content-box-rounded2">
+            <h1>Solar PV solutions</h1>
+            <hr>
+            <div class="content-with-float">
+                <div class="text-content">
+                    <p>Solar Photovoltaic systems have come of age. Installers now can guarantee reliable cost-free power to your home or business. ROI is now taking less time than ever thanks to the ever-decreasing equipment costs and better technology.</p>
+                    <p>If you have battery storage such as a Tesla Powerwall or similar Lithium-Ion chemistry solutions then you can take your savings even further.</p>
+                    <p>Call us now to discuss which solution is the best fit for your home.</p>
+                </div>
+                <div class="image-box">
+                    <img src="images/pv250.jpg" alt="pv250">
+                </div>
+            </div>
+        </div>        
+    </div>
+</body>
+</html>
