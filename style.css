@@ -1,178 +1,213 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    html {
+        background-image: url('images/bg800bulbs.jpg');
+        background-size: 100%; /* Zoom out the background image */
+        background-position: left;
+        background-repeat: repeat;
+    }
+    body {
+        margin: 0;
+        display: flex;
+        justify-content: center; /* Center the container horizontally */
+        align-items: center; /* Center the container vertically */
+        min-height: 100vh; /* Make sure the body takes the full height of the viewport */
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0; /* Set container margin to zero */
+        padding: 0; /* Set container padding to zero */
+        width: 100%;
+        max-width: 800px; /* Maximum width for the container */
+    }
+    h1 {
+        font-size: 24px; /* Adjust the font size as needed */
+    }
+    p {
+        font-size: 16px; /* Adjust the font size as needed */
+    }
+    .content-box {
+        background-color: rgba(255, 255, 255, 0.9); 
+        width: 100%;
+        padding: 10px; /* Add padding for content inside the box */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        border-radius: 10px 10px 0 0; /* Add rounded corners */
+        outline: 1px solid rgb(90, 90, 90)
+    }
+    .content-box-rounded2 {
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.9); 
+        width: 100%;
+        padding: 10px; /* Add padding for content inside the box */
+        outline: 1px solid rgb(90, 90, 90);
+        border-radius: 0 0 0 0;
+    }
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .nav-container nav ol {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        margin: 0; /* Set margin to zero */
+    }
+    .nav-container nav ol li {
+        margin-right: 20px;
+    }
+    .logo32 {
+        display: flex;
+        align-items: left;
+        padding: 10px; /* Add padding */
+    }
+    .logo32 img {
+        width: 50px; /* Set the width of the logo */
+        height: 50px; /* Set the height of the logo */
+        object-fit: cover; /* Ensure the image fits within the specified dimensions */
+    }
+    .img-centered {
+display: block;
+margin-right: 0px; 
+margin-left: -10px;
+margin-right: -10px;
+margin-bottom: 0px;
+float: inline-end;
+outline: 1px solid rgb(90, 90, 90)
+}
+    .content-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .content-with-image {
+        display: flex;
+        align-items: center;
+    }
+    .image-box {
+        width: 250px; /* Adjust the width of the image box */
+        height: 250px; /* Adjust the height of the image box */
+        border-radius: 10px; /* Add rounded corners */
+        overflow: hidden; /* Ensure the image stays within the box */
+        margin-left: 20px; /* Add margin to separate the image from text */
+    }
+    .content-with-float {
+display: flex;
+margin-bottom: 20px; /* Add some spacing below the content box */
+border-radius: 10px;
 }
 
-.container {
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
+.text-content {
+flex: 1; /* Allow the text content to take up the remaining space */
+margin-right: 20px; /* Add margin to separate the image from text */
 }
 
-.content-box {
-    margin-bottom: 20px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    max-width: 100%;
-    height: auto;
-}
-
-nav ol {
-    list-style: none;
-    display: flex;
-    padding: 0;
-    margin: 0;
-}
-
-nav ol li {
-    margin: 0 10px;
-}
-
-nav ol li a {
-    text-decoration: none;
-    color: #333;
-    padding: 10px;
-}
-
-.hero-image {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-.content-with-float {
-    display: flex;
-    margin-bottom: 20px;
-    border-radius: 10px;
-}
-
-.text-content, .image-box {
-    flex: 1 1 50%;
-    padding: 10px;
+.image-box {
+width: 250px; /* Adjust the width of the image box */
+height: 250px; /* Adjust the height of the image box */
+border-radius: 10px; /* Add rounded corners */
+overflow: hidden; /* Ensure the image stays within the box */
 }
 
 .image-box img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
+width: 100%;
+height: 100%;
+object-fit: cover;
+border-radius: 10px; /* Add rounded corners */
 }
-
 .button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    background-color: #c2c2c2; /* Green background */
+    color: rgb(0, 0, 0); /* black text */
+    padding: 15px 80px; /* Some padding */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Get the element to sit inline */
+    font-size: 16px; /* Increase font size */
+    margin: 4px 2px; /* Some margin */
+    cursor: pointer; /* Pointer/hand icon */
+    border-radius: 50px; /* Rounded corners */
+    outline: 1px;
+    outline-color: #afafaf;
 }
-
-.button:hover {
-    background-color: #555;
-}
-
-footer .orange-box {
-    background-color: orange;
+.wrapper {
     text-align: center;
-    padding: 10px;
-    border-top: 2px solid #333;
 }
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-}
-
-table td {
-    padding: 10px;
-    border: 1px solid #ccc;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-form label {
-    margin-top: 10px;
-}
-
-form input, form textarea {
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-form input[type="submit"] {
-    margin-top: 20px;
-    background-color: #333;
-    color: white;
-    border: none;
-    cursor: pointer;
-    padding: 10px 20px;
-    border-radius: 4px;
-}
-
-form input[type="submit"]:hover {
-    background-color: #555;
-}
-
-.orange-box3 {
-    background-color: orange;
-    text-align: center;
-    padding: 10px;
-    border-top: 2px solid #333;
-}
-
 .transparent-box {
-    background-color: rgba(177, 247, 177, 0.445);
-    padding: 20px;
-    border-radius: 0px;
-    margin-bottom: 20px;
-    border-left: solid;
-    border-color: green;
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    background-color: rgba(196, 255, 209, 0.445); /* Semi-transparent background */
+    border-left: 5px solid #24815a; /* Left border */
+    padding: 20px; /* Padding inside the container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);/* Optional: shadow for better visibility */
+    width: -webkit-fill-available;
+
+}
+.content-with-float2 {
+flex:auto;
+margin-bottom: 50px; /* Add some spacing below the content box */
+border-radius: 10px;
+}
+.text-content2 {
+    display: flex;
+    align-items:normal; /* Align items vertically */
+    margin-left: 20px; /* Add margin to separate the image from text */
 }
 
-.horizontal-text p {
-    margin-bottom: 10px;
+.image-box2 {
+    width: 250px; /* Adjust the width of the image box */
+    height: 250px; /* Adjust the height of the image box */
+    border-radius: 10px; /* Add rounded corners */
+    overflow: hidden; /* Ensure the image stays within the box */
+    margin-right: 20px; /* Add margin to separate the image from text */
 }
 
-.horizontal-text footer {
-    font-style: italic;
+.image-box2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the box */
+    border-radius: 0; /* Remove rounded corners applied to the image */
+}
+.button2 {
+    background-color: #c2c2c2; /* Green background */
+    color: rgb(0, 0, 0); /* black text */
+    padding: 15px 80px; /* Some padding */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Get the element to sit inline */
+    font-size: 16px; /* Increase font size */
+    margin: 4px 2px; /* Some margin */
+    cursor: pointer; /* Pointer/hand icon */
+    border-radius: 50px; /* Rounded corners */
+    outline: 1px;
+    outline-color: #afafaf;
+    margin-top: 20px;
+}
+.wrapper2 {
+    text-align: center;
+}
+.orange-box {
+    display: flex;
+    align-content: center;
+    background-color: #ff8a04;
+    border-radius: 0 0 10px 10px;
+    color: white;
+    width: 820px;
+}
+.orange-box2 {
+    display: flex;
+    align-content: center;
+    background-color: #ff8a04;
+    border-radius: 0 0 10px 10px;
+    color: white;
+    width: 800px;
+}
+.orange-box3 {
+    display: flex;
+    align-content: center;
+    background-color: #ff8a04;
+    border-radius: 0 0 10px 10px;
+    color: white;
+    width: 820px;
 }
 
-@media (max-width: 600px) {
-    .nav-container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav ol {
-        flex-direction: column;
-    }
-
-    .text-content, .image-box {
-        flex: 1 1 100%;
-    }
-
-    table td {
-        display: block;
-        width: 100%;
-    }
-}
